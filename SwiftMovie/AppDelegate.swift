@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
                             
@@ -18,6 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
     // Override point for customization after application launch.
     self.window!.backgroundColor = UIColor.whiteColor()
+    
+    var controller = MovieViewController()
+    self.window!.rootViewController = controller
+    
     self.window!.makeKeyAndVisible()
     return true
   }
